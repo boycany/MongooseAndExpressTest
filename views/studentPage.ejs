@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= data.name %>
+    </title>
+</head>
+
+<body>
+    <h1>Student Profile</h1>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>
+                <%= data.id %>
+            </td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>
+                <%= data.name %>
+            </td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>
+                <%= data.age %>
+            </td>
+        </tr>
+        <tr>
+            <td>Merit Scholarship</td>
+            <td>
+                <%= data.scholarship.merit %>
+            </td>
+        </tr>
+        <tr>
+            <td>Other Scholarship</td>
+            <td>
+                <%= data.scholarship.other %>
+            </td>
+        </tr>
+    </table>
+    <a href="/students/edit/<%= data.id %>">Edit Profile</a>
+    <a href="/students">Back</a>
+</body>
+
+</html>
